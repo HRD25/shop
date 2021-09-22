@@ -1,0 +1,52 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+.a-nav-buttons-center{
+    text-decoration: none;
+    color:white;
+}
+
+.cart-span{
+    padding-left: 4px;
+    padding-right: 4px;
+    background: grey;
+    color: white;
+    border-radius: 23px;
+}
+
+.box-nav-buttons-center{
+    display: flex;
+    list-style: none;
+    font-size: 23px;
+    justify-content: space-evenly;
+}
+
+.nav-buttons-center{
+    display: flex;
+    padding: 3px;
+}
+
+.a-nav-buttons-center:hover{
+    color:white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
