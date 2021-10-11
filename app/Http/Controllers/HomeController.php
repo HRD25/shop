@@ -2,18 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\item;
+use App\Models\slider;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    private slider $slider;
+    private item $item;
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(slider $slider,item $item)
     {
-        $this->middleware('auth');
+        $this->item = $item;
+        $this->slider = $slider;
     }
 
     /**
@@ -23,6 +29,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home',[
+            'items' => $this->item->where('name','Computer')->get(),
+            'collection' => $this->item->where('name','TV')->get()
+        ]);
     }
 }
