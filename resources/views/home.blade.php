@@ -3,7 +3,7 @@
 @section('slider')
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" style="height: 600px">
+            <div class="carousel-inner" style="height: 600px;border-radius:10px">
                 <div class="carousel-item active">
                     <img src="https://image.ceneostatic.pl/data/products/98834524/i-microsoft-surface-laptop-go-12-45-i5-8gb-128gb-win10-thh00009.jpg"
                         class="d-block w-100" alt="..." style="max-height: 600px">
@@ -32,10 +32,12 @@
 @endsection
 
 @section('content')
-    <div class="container">
 
-        <div class="col-sm-2 bg-dark text-white text-center ps-0" style="margin-top: 30px">
-            <h2><b>New Items</b></h2>
+    <div class="container">
+        <div class="d-flex" style="justify-content: center;margin-bottom:10px">
+            <div class="col-sm-2 bg-dark text-white text-center ps-0" style="margin-top: 30px;border-radius:20px">
+                <h2><b>New Items</b></h2>
+            </div>
         </div>
 
 
@@ -43,7 +45,7 @@
             @foreach ($items as $item)
                 <div class="col-sm-10">
                     <div class="col-sm-12">
-                        <div class="card card-body" style="margin-right: 10px">
+                        <div class="card card-body" style="margin-right: 10px;border-radius:10px">
                             <img src="{{ $item->photo }}" class="img-fluid">
                             <p class="card-text">{{ $item->name }}</p>
 
@@ -84,14 +86,13 @@
                         </div>
                     </div>
                 </div>
-
             @endforeach
         </div>
     </div>
 
     <div class="container">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="border-radius:10px">
                 <div class="carousel-item active">
                     <img src="https://weneedmore.space/wp-content/uploads/2021/01/minimalistyczna-tapeta-kalendarz-2021-01.jpg"
                         style="height: 300px" class="d-block w-100" alt="...">
@@ -109,17 +110,18 @@
     </div>
 
     <div class="container">
-
-        <div class="col-sm-3 bg-dark text-white text-center ps-0" style="margin-top: 30px">
-            <h2><b>New Collections</b></h2>
+        <div class="w-100 d-flex" style="justify-content: center;margin-bottom:10px">
+            <div class="col-sm-3 bg-dark text-white text-center ps-0" style="margin-top: 30px;border-radius:20px">
+                <h2><b>New Collections</b></h2>
+            </div>
         </div>
 
         <div class="row slider">
             @foreach ($collection as $item)
                 <div class="col-sm-10">
                     <div class="col-sm-12">
-                        <div class="card card-body" style="margin-right: 10px">
-                            <img src="{{ $item->photo }}" class="img-fluid" style="height: 250px">
+                        <div class="card card-body" style="margin-right: 10px;border-radius:10px">
+                            <img src="{{ $item->photo }}" class="img-fluid">
                             <p class="card-text">{{ $item->name }}</p>
 
                             <div class="box-stars">

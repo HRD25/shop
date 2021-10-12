@@ -15,17 +15,14 @@ footer {
   color: white;
 }
 
-.footer-box-bootom {
-  background: #4e565d;
-}
-
 .footer-box-media {
   width: 100%;
 }
 
 .footer-media-ul {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 0px;
 }
 
 .footer-media-item {
@@ -34,36 +31,28 @@ footer {
 }
 
 .footer-media-item {
-  width: 300px;
+  width: 30px;
   margin: 3px;
 }
 
-.bi-facebook:hover {
+.bi-facebook {
   fill: #0088ff;
   cursor: pointer;
-  transition: transform 0.2s;
-  transform: scale(1.1);
 }
 
-.bi-twitter:hover {
+.bi-twitter {
   fill: #00acee;
   cursor: pointer;
-  transition: transform 0.2s;
-  transform: scale(1.1);
 }
 
-.bi-youtube:hover {
+.bi-youtube {
   fill: #FF0000;
   cursor: pointer;
-  transition: transform 0.2s;
-  transform: scale(1.1);
 }
 
-.bi-instagram:hover {
+.bi-instagram {
   fill: #DD2A7B;
   cursor: pointer;
-  transition: transform 0.2s;
-  transform: scale(1.1);
 }
 
 .footer-box-bootom {
@@ -129,13 +118,12 @@ footer {
 
 .cart-span {
   position: static;
-  margin-left: 3px;
-  padding-left: 4px;
-  padding-right: 4px;
-  font-size: 10px;
-  background: grey;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  background: #5a95b6;
   color: white;
-  border-radius: 23px;
+  border-radius: 50%;
 }
 
 .box-nav-buttons-center {
@@ -159,8 +147,6 @@ footer {
 
 .a-nav-buttons-center:hover {
   color: white;
-  -webkit-text-decoration: underline white;
-          text-decoration: underline white;
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -202,6 +188,57 @@ input:checked ~ label {
   color: black;
   transition: transform 0.5s;
   transform: scale(0.9);
+}
+
+.footer-box-center {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-box-bootom {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  background: #004f55 !important;
+}
+
+.footer-link-media {
+  text-decoration: none;
+  color: white;
+}
+
+.content-list-footer {
+  float: left;
+  list-style: none;
+}
+
+.content-list-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.photo-in-card {
+  display: flex;
+  flex-wrap: wrap;
+  height: 180px;
+  width: 300px;
+}
+
+.media-in-card {
+  height: 100%;
+  width: 200px;
+}
+
+.item-card-container {
+  text-decoration: none;
+  color: black;
+}
+
+.item-card-container:hover {
+  transition: background 0.2s;
+  background: darkgray;
 }
 
 /*!

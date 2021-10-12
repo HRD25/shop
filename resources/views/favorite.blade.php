@@ -3,9 +3,9 @@
 @section('content')
     <div class="container-fluid pt-2 view-height">
         <div class="row">
-            <div class="container" style="display: flex">
-                <div class="col-sm-2  text-white text-center">
-                    <h2 class="bg-dark"><b>My List Favorits</b></h2>
+            <div class="container" style="display: flex;">
+                <div class="col-sm-2 m-0  text-white text-center bg-dark" style="border-radius:20px">
+                    <h2 class="m-0"><b>My List Favorits</b></h2>
                 </div>
 
                 <div class="col-sm-10 text-end">
