@@ -35,15 +35,15 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
             <div class="container-fluid d-flex">
                 <a class="navbar-brand nav-menu-user" href="/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-brightness-alt-high" viewBox="0 0 16 16" style="margin-bottom: 3px">
                         <path
                             d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4zm0 1a3 3 0 0 1 2.959 2.5H5.04A3 3 0 0 1 8 8z" />
                     </svg>
-                    SHOP
+                    <span class="span-nav-buttons-center">SHOP</span>
                 </a>
                 <form class="d-flex col-sm-4 m-0 p-0">
                     <input class="form-control me-2 p-0 ps-1 pe-1" type="search" placeholder="Search"
@@ -53,9 +53,8 @@
                 <div>
                     <li class="nav-item nav-menu-user" style="margin-right: 5px">
                         <a class="nav-link" href="#">
-                            <button class="btn btn-sm text-white" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample" aria-expanded="false"
-                                aria-controls="collapseExample">
+                            <button class="btn btn-sm" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="border:2px solid rgba(255, 254, 254, 0.125);border-radius: 15px;color: rgba(0, 196, 213, 1) !important;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-chevron-double-down" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -81,24 +80,24 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                             <li class="nav-item nav-menu-user" style="margin-right: 5px">
-                                <a class="nav-link text-white" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                <a class="nav-link nav-link-menu-user" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-heart" viewBox="0 0 16 16">
                                         <path
                                             d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                                     </svg>
-                                    <span>Favorits</span>
+                                    <span class="span-nav-buttons-center">Favorits</span>
                                 </a>
                             </li>
 
                             <li class="nav-item nav-menu-user" style="margin-right: 10px">
-                                <a href="" class="nav-link text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                <a href="" class="nav-link nav-link-menu-user">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-cart" viewBox="0 0 16 16">
                                         <path
                                             d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                                     </svg>
-                                    <span>Cart</span>
+                                    <span class="span-nav-buttons-center">Cart</span>
                                     <span class="cart-span"><b>2</b></span>
                                 </a>
                             </li>
@@ -112,7 +111,7 @@
                                 <div class="dropdown-menu dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
-                                                                                                                                                                                                                                                                                                                                                                        document.getElementById('logout-form').submit();">
+                                                                                                                                                                                                                                                                                                                                                                                document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -150,19 +149,47 @@
                 <div class="container p-0 mt-1 bg-dark" style="border-radius: 20px">
                     <ul class="box-nav-buttons-center m-0">
                         <li class="nav-buttons-center ">
-                            <a href="/" class="a-nav-buttons-center"><b>HOME</b></a>
+                            <a href="/" class="a-nav-buttons-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-house-fill mb-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                </svg>
+                                <span class="span-nav-buttons-center">HOME</span>
+                            </a>
                         </li>
 
                         <li class="nav-buttons-center">
-                            <a href="/start" class="a-nav-buttons-center"><b>START</b></a>
+                            <a href="/start" class="a-nav-buttons-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-play-fill mb-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                                </svg>
+                                <span class="span-nav-buttons-center">START</span>
+                            </a>
                         </li>
 
                         <li class="nav-buttons-center">
-                            <a href="/favorite" class="a-nav-buttons-center"><b>FAVORITE</b></a>
+                            <a href="/favorite" class="a-nav-buttons-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-star-fill mb-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span class="span-nav-buttons-center">FAVORITE</span>
+                            </a>
                         </li>
 
                         <li class="nav-buttons-center">
-                            <a href="/cart" class="a-nav-buttons-center"><b>CART</b></a>
+                            <a href="/cart" class="a-nav-buttons-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-fill mb-2" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg>
+                                <span class="span-nav-buttons-center">CART</span>
+                            </a>
                         </li>
                     </ul>
                 </div>

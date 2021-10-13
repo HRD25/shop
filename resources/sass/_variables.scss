@@ -142,7 +142,7 @@ footer{
     padding-left: 6px;
     padding-right: 6px;
     font-size: 12px;
-    background: rgb(90, 149, 182);
+    background: rgba(0, 196, 213, 1) !important;
     color: white;
     border-radius: 50%;
 }
@@ -152,14 +152,27 @@ footer{
 .box-nav-buttons-center{
     display: flex;
     list-style: none;
-    font-size: 23px;
+    font-size: 20px;
     justify-content: space-evenly;
+
 }
 
 .a-nav-buttons-center{
     text-align: center;
     text-decoration: none;
-    color:white;
+    color: rgba(0, 196, 213, 1) !important;
+}
+
+.span-nav-buttons-center{
+    color: white;
+}
+
+.navbar-brand{
+    color: rgba(0, 196, 213, 1) !important;
+}
+
+.nav-link-menu-user{
+    color: rgba(0, 196, 213, 1) !important;
 }
 
 .nav-buttons-center{
@@ -171,7 +184,8 @@ footer{
 .a-nav-buttons-center:hover{
     color:white;
     cursor: pointer;
-    transform: scale(1.2);
+    transition: transform .2s;
+    transform: scale(1.1);
 }
 
 // END NAV BUTTONS
@@ -230,7 +244,6 @@ input:checked ~ label{
     justify-content:center;
     margin-top: 10px;
     background: rgba(0, 79, 85, 1) !important;
-
 }
 
 .footer-link-media{
@@ -247,24 +260,38 @@ input:checked ~ label{
     color: white;
 }
 
-.photo-in-card{
+//
+.box-title-name-section{
     display: flex;
-    flex-wrap: wrap;
-    height: 180px;
-    width: 300px;
+    margin-bottom:10px;
+    margin-top: 30px;
+    text-align: start;
 }
 
-.media-in-card{
-    height: 100%;
-    width: 200px;
+.title-name-section{
+    font-size: 24px;
+    width: 180px;
+    color: black;
+}
+//
+
+.breadcrumb-item.home a{
+    color: black;
+}
+.breadcrumb-item.active{
+    color:rgba(0, 196, 213, 1) !important;
 }
 
-.item-card-container{
+.breadcrumb-item a{
     text-decoration: none;
     color: black;
 }
 
-.item-card-container:hover{
-    transition: background 0.2s;
-    background:darkgray;
+.nav-breadcrumb{
+    font-size: 20px;
+    max-width: 250px;
+}
+
+.star-in-card:hover{
+    transform: scale(1.1);
 }
